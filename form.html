@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>jsform</title>
+    <link rel="stylesheet" href="form.css">
+
+    <style>
+        body {
+            background-color: blanchedalmond;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <button id="date" onclick="date()">Date_Time</button>
+
+    </div>
+
+    <div class="main">
+        <h1>Feedback</h1>
+        <div class="row">
+            <div class=" col form1">
+                <form autocomplete="off" method="post">
+                    <div>
+                        <lable>Name :</lable>
+                        <input class="lol" type="text" placeholder="Enter your name" id="name" required />
+                    </div><br>
+                    <div>
+                        <lable>Email :</lable>
+                        <input class="lol" type="text" onkeyup=" validateEmail()" placeholder="Enter your Email"
+                            id="mail" required />
+                    </div><br>
+                    <div>
+                        <lable>Mobile No :</lable>
+                        <input class="lol" type="text" placeholder="Mobile Number" maxlength="10" id="mobile"
+                            required />
+                    </div><br>
+                    <div>
+                        <lable id="lol">Location :</lable>
+                        <input type="radio" name="location" id="location">IND
+                        <input type="radio" name="location" id="location">NRI
+                    </div>
+                    <div>
+                        <label class="country">country :</label>
+                        <select name="country" id="country" required>
+                            <option value="INDIA">INDIA</option>
+                            <option value="AUSTRALIA">AUSTRALIA</option>
+                            <option value="EUROPE">EUROPE</option>
+                            <option value="US">US</option>
+                        </select>
+                        <label class="state">state :</label>
+                        <select name="state" id="state" required>
+                            <option value="Andhra pradesh">Andhra pradesh</option>
+                            <option value="Telangana">Telangana</option>
+                            <option value="Karnataka">Karnataka</option>
+                            <option value="Tamil nadu">Tamil nadu</option>
+                            <option value="Kerala">Kerala</option>
+                        </select>
+                        <label class="District">District :</label>
+                        <select name="District" id="District">
+                            <option value="Visakapatanam">Visakapatanam</option>
+                            <option value="Banglore">Banglore</option>
+                            <option value="Hyderabad">Hyderabad</option>
+                            <option value="Thiruthani">Thiruthani</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <lable id="lol">job Location :</lable><br>
+                        <section name="job location">
+                            <input type="checkbox" name="vehicle1" value="Banglore">
+                            <label for="vehicle1"> Banglore</label><br>
+                            <input type="checkbox" name="vehicle2" value="Hyderabad">
+                            <label for="vehicle2">Hyderabad</label><br>
+                            <input type="checkbox" name="vehicle3" value="chennai">
+                            <label for="vehicle3"> chennai</label><br>
+                            <input type="checkbox" name="vehicle4" value="Mumbai">
+                            <label for="vehicle4">Mumbai</label><br>
+                        </section>
+
+                    </div>
+                    <div>
+                        <lable>Feedback</lable>
+                        <textarea msg="" type="text" row="10" id="text" placeholder="write a meassge"></textarea>
+                    </div>
+
+
+                    <div class="form-action-button">
+                        <input type="submit" id="submit" name="submit" button class="btn btn-primary btn-block" />
+                    </div>
+                    <div>
+                        <input class="reset" type="reset" name="reset" placeholder="reset">
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+    <hr>
+    <div>
+        <table id="table" class="table">
+
+            <tr>
+
+                <th>Name</th>
+                <th>Email</th>
+                <th>number</th>
+                <th>Location</th>
+                <th>country</th>
+                <th>state</th>
+                <th>District</th>
+                <th></th>
+
+            </tr>
+        </table>
+    </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+  <script src="form.js"></script>
+</body>
+
+</html>

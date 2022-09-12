@@ -1,0 +1,85 @@
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+.main {
+    display: flex;
+    height: 100vh;
+    max-width: 759px;
+    margin-left: 18%;
+    position: relative;
+}
+
+h1 {
+    color: darkgray;
+    font-weight: bolder;
+    margin-left: 1px;
+
+}
+
+lable {
+    padding: 10% 0%;
+    font-size: larger;
+    font-weight: 900;
+    color: black;
+}
+
+.lol {
+    padding: 10px 160px;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+textarea {
+    padding: 30px 235px;
+}
+
+.form-action-button {
+    width: 200px;
+    margin-left: 245px;
+}
+
+form {
+    padding: 7% 0%;
+    background-color: #fff;
+    opacity: 85%;
+    margin-top: 5%;
+    padding-left: 50px;
+
+}
+
+.row {
+    margin-top: 58px;
+    margin-left: -171px;
+}
+
+.table {
+    margin-top: 100px;
+    width: 99%;
+    font-size: larger;
+    background-color: #fff;
+}
+
+.reset {
+    background-color: red;
+    margin-left: 70%;
+
+}
+
+.country {
+    padding: 10px;
+    font-size: larger;
+    font-weight: 900;
+    color: black;
+}
+
+#date {
+    margin-left: 70%;
+    position: absolute;
+    margin-top: 30px;
+    color: #fff;
+    background-color: black;
+}
